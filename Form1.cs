@@ -10,48 +10,43 @@ using System.Windows.Forms;
 
 namespace Calculator_Basic
 {
-    public partial class Form1 : Form
+    public partial class frmCalc : Form
     {
-        public Form1()
+        public frmCalc()
         {
             InitializeComponent();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            int So1, So2;
-            So1 = int.Parse(textBox1.Text.ToString());
-            So2 = int.Parse(textBox2.Text.ToString());
-            double KETQUA;
-            KETQUA = So1 / So2; 
-            textBox3.Text = KETQUA.ToString();
+            int So1 = int.Parse(txtSo1.Text.ToString());
+            int So2 = int.Parse(txtSo2.Text.ToString());
+            double ketQua = So1 / So2;
+            txtKetQua.Text = ketQua.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int So1, So2;
-            So1 = int.Parse(textBox1.Text.ToString());
-            So2 = int.Parse(textBox2.Text.ToString());
-            double KETQUA; 
-            KETQUA = So1 + So2;
-            textBox3.Text = KETQUA.ToString(); 
+            int So1 = int.Parse(txtSo1.Text.ToString());
+            int So2 = int.Parse(txtSo2.Text.ToString());
+            double ketQua = So1 + So2;
+            txtKetQua.Text = ketQua.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int So1, So2;
-            So1 = int.Parse(textBox1.Text.ToString());
-            So2 = int.Parse(textBox2.Text.ToString());
-            double KETQUA;
-            KETQUA = So1 - So2; 
-            textBox3.Text = KETQUA.ToString();
+            int So1 = int.Parse(txtSo1.Text.ToString());
+            int So2 = int.Parse(txtSo2.Text.ToString());
+            double ketQua = So1 - So2;
+            txtKetQua.Text = ketQua.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
-            int So1, So2;
-            So1 = int.Parse(textBox1.Text.ToString());
-            So2 = int.Parse(textBox2.Text.ToString());
-            double KETQUA;
-            KETQUA = So1 * So2;
-            textBox3.Text = KETQUA.ToString();
+            int So1 = int.Parse(txtSo1.Text.ToString());
+            int So2 = int.Parse(txtSo2.Text.ToString());
+            double ketQua = So1 * So2;
+            txtKetQua.Text = ketQua.ToString();
         }
     }
 }
